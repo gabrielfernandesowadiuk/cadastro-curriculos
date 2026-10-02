@@ -32,3 +32,5 @@ public record CandidatoDto(int Id, string NomeCompleto, string Email, string? Te
     public static CandidatoDto De(Candidato c) =>
         new(c.Id, c.NomeCompleto, c.Email, c.Telefone, c.AreaInteresse, c.ResumoProfissional, c.CriadoEm);
 }
+
+public record ExtracaoResultadoDto(string? NomeCompleto, string? Email, string? Telefone);
